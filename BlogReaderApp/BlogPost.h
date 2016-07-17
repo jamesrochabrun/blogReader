@@ -20,10 +20,10 @@
 
 
 //designated initializer
-- (instancetype)initWithtitle:(NSString*)title author:(NSString*)author;
+- (instancetype)initWithtitle:(NSString*)title author:(NSString*)author thumbnail:(NSString*)thumbnail date:(NSString*)date url:(NSURL*)url;
 
 //convenience constructor
-+ (id)blogPostWithTitleAndAuthor:(NSString*)title author:(NSString*)author;
+//+ (id)blogPostWithTitleAndAuthor:(NSString*)title author:(NSString*)author;
 
 //properties attributes
 
@@ -35,6 +35,8 @@
 //strong , is when there is a Parent - > child relationship
 //weak , is when  there is  as Child -> Parent relationship
 
+
+//instance methods or helpers
 - (NSURL*)thumbnailURL;
 - (NSString*)formatedDate;
 

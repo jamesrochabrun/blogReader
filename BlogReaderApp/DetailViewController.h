@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BlogPost;
 
 @interface DetailViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property BlogPost *blogPost;
 
 @end

@@ -10,24 +10,24 @@
 
 @implementation BlogPost
 
-
-
-- (instancetype)initWithtitle:(NSString*)title author:(NSString*)author {
+- (instancetype)initWithtitle:(NSString*)title author:(NSString*)author thumbnail:(NSString*)thumbnail date:(NSString*)date url:(NSURL*)url {
     
     self = [super init];
     if (self) {
         self.title = title;
         self.author = author;
-        self.thumbnail = nil;
-        self.date = nil;
-        self.url = nil;
+        self.thumbnail = thumbnail;
+        self.date = date;
+        self.url = url;
     }
     return self;
 }
 
-+ (id)blogPostWithTitleAndAuthor:(NSString*)title author:(NSString*)author {
-    return [[self alloc] initWithtitle:title author:author];
-}
+
+//this was a convennece constructor example
+//+ (id)blogPostWithTitleAndAuthor:(NSString*)title author:(NSString*)author {
+//    return [[self alloc] initWithtitle:title author:author];
+//}
 
 //instance method to create a url
 - (NSURL*)thumbnailURL {

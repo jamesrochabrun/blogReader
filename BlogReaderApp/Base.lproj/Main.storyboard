@@ -91,6 +91,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="qTi-zS-pmq"/>
+                    <connections>
+                        <outlet property="tableView" destination="0dl-3p-csd" id="RxW-sU-bhD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,8 +109,45 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kQd-dp-YN0">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdL-FG-BCO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jdL-FG-BCO" secondAttribute="trailing" id="LAy-aW-nEa"/>
+                            <constraint firstItem="ynu-Ky-qWV" firstAttribute="top" secondItem="jdL-FG-BCO" secondAttribute="bottom" id="VPD-76-LYC"/>
+                            <constraint firstItem="jdL-FG-BCO" firstAttribute="top" secondItem="Pwh-Ic-A2B" secondAttribute="bottom" id="YWS-Su-tjj"/>
+                            <constraint firstItem="jdL-FG-BCO" firstAttribute="leading" secondItem="kQd-dp-YN0" secondAttribute="leading" id="eR3-e5-jqI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jdL-FG-BCO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="LAy-aW-nEa"/>
+                                <exclude reference="YWS-Su-tjj"/>
+                                <exclude reference="eR3-e5-jqI"/>
+                                <exclude reference="VPD-76-LYC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jdL-FG-BCO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="LAy-aW-nEa"/>
+                                <include reference="YWS-Su-tjj"/>
+                                <include reference="eR3-e5-jqI"/>
+                                <include reference="VPD-76-LYC"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="jdL-FG-BCO" id="mmn-kY-dZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2g-Pg-kaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
