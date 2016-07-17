@@ -13,6 +13,8 @@
 		7B3A20901D3AF89A00993C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3A208E1D3AF89A00993C2C /* Main.storyboard */; };
 		7B3A20921D3AF89A00993C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3A20911D3AF89A00993C2C /* Assets.xcassets */; };
 		7B3A20951D3AF89A00993C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3A20931D3AF89A00993C2C /* LaunchScreen.storyboard */; };
+		7B3A209E1D3B144D00993C2C /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3A209D1D3B144D00993C2C /* BlogPost.m */; };
+		7B3A20C71D3B4EBB00993C2C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3A20C61D3B4EBB00993C2C /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		7B3A20911D3AF89A00993C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B3A20941D3AF89A00993C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B3A20961D3AF89A00993C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B3A209C1D3B144D00993C2C /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		7B3A209D1D3B144D00993C2C /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		7B3A20C51D3B4EBB00993C2C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7B3A20C61D3B4EBB00993C2C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,9 @@
 			children = (
 				7B3A20881D3AF89A00993C2C /* AppDelegate.h */,
 				7B3A20891D3AF89A00993C2C /* AppDelegate.m */,
-				7B3A208B1D3AF89A00993C2C /* ViewController.h */,
-				7B3A208C1D3AF89A00993C2C /* ViewController.m */,
+				7B3A209F1D3B145400993C2C /* model */,
+				7B3A20A01D3B146000993C2C /* view */,
+				7B3A20A11D3B146900993C2C /* controller */,
 				7B3A208E1D3AF89A00993C2C /* Main.storyboard */,
 				7B3A20911D3AF89A00993C2C /* Assets.xcassets */,
 				7B3A20931D3AF89A00993C2C /* LaunchScreen.storyboard */,
@@ -77,6 +84,33 @@
 				7B3A20861D3AF89A00993C2C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B3A209F1D3B145400993C2C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7B3A209C1D3B144D00993C2C /* BlogPost.h */,
+				7B3A209D1D3B144D00993C2C /* BlogPost.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7B3A20A01D3B146000993C2C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		7B3A20A11D3B146900993C2C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B3A208B1D3AF89A00993C2C /* ViewController.h */,
+				7B3A208C1D3AF89A00993C2C /* ViewController.m */,
+				7B3A20C51D3B4EBB00993C2C /* DetailViewController.h */,
+				7B3A20C61D3B4EBB00993C2C /* DetailViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3A20C71D3B4EBB00993C2C /* DetailViewController.m in Sources */,
 				7B3A208D1D3AF89A00993C2C /* ViewController.m in Sources */,
 				7B3A208A1D3AF89A00993C2C /* AppDelegate.m in Sources */,
 				7B3A20871D3AF89A00993C2C /* main.m in Sources */,
+				7B3A209E1D3B144D00993C2C /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,7 @@
 				7B3A209B1D3AF89A00993C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
